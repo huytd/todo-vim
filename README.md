@@ -10,6 +10,8 @@ Use any package manager to install, for example, using Packer:
 use 'huytd/todo-vim'
 ```
 
+Then open any `*.todo` file to work.
+
 ## How to use
 
 Syntax:
@@ -30,7 +32,8 @@ Moved           m <task description>
 Shortcuts:
 
 ```
-Insert today's date      /t<space>
+Insert today's date      /t
+Insert a separator       ---
 ```
 
 Example:
