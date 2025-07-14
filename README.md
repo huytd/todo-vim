@@ -41,13 +41,13 @@ Example:
 ```
 # Thursday, July 10th, 2025
 
-PROJECT A
+PROJECT-A
 d   Create a vim plugin for the todo app
 m   Create a web app for it (someday)
 w   I am working on this task
     A task can have a note under it as well.
     The note can be multiple lines, or whatever.
 
-PROJECT B
+PROJECT-B
 t   After that, I'll work on this
 ```
