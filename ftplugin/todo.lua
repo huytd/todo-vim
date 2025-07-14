@@ -40,6 +40,11 @@ function M.day_separator()
   return string.rep('—', 85)
 end
 
+---Return current time in HH:MM format.
+function M.current_time()
+  return os.date('%H:%M')
+end
+
 ----------------------------------------------------------------------
 -- Status setter ------------------------------------------------------
 ----------------------------------------------------------------------
@@ -97,6 +102,7 @@ package.loaded['todo'] = M
 ----------------------------------------------------------------------
 vim.cmd([[
   iabbrev <expr> /t  v:lua.require'todo'.today_header()
+  iabbrev <expr> /c  v:lua.require'todo'.current_time()
   iabbrev <expr> --- v:lua.require'todo'.day_separator()
 ]])
 
