@@ -30,11 +30,14 @@ syn match todoDone /^\s*x\s.*$/
 syn match todoMoved /^\s*>\s.*$/
 syn match todoMoved /^\s*m\s.*$/
 
+syn match todoTimestamp /\d\{1,2}:\d\{2}/
+
 " -------------------------------------------------------------
 "  Default highlighting links – tweak to taste
 " -------------------------------------------------------------
 hi def link todoHeader      Title
 hi def link todoProject     Constant
+hi def link todoTimestamp   Number
 hi def todoProject          gui=underline cterm=underline
 hi def todoHeader           gui=bold
 hi def todoWork             guifg=#27272a guibg=#fbc19d
